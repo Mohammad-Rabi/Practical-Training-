@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php include 'connection.php'; ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Practical Training | Registration</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">  
+<link href="css/flexslider.css" rel="stylesheet">
+<link href="css/templatemo-style.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>          <!-- jQuery -->
+    <script type="text/javascript" src="js/moment.js"></script>             <!-- moment.js -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>          <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script> <!-- bootstrap date time picker js, http://eonasdan.github.io/bootstrap-datetimepicker/ -->
+  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<!--
+  <script src="js/froogaloop.js"></script>
+  <script src="js/jquery.fitvid.js"></script>
+-->
+    <script type="text/javascript" src="js/templatemo-script.js"></script>          <!-- Templatemo Script -->
+  <script>
+    // HTML document is loaded. DOM is ready.
+    $(function() {
+
+      $('#hotelCarTabs a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+
+          $('.date').datetimepicker({
+              format: 'MM/DD/YYYY'
+            });
+            $('.date-time').datetimepicker();
+
+      // https://css-tricks.com/snippets/jquery/smooth-scrolling/
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+    });
+    
+    // Load Flexslider when everything is loaded.
+    $(window).load(function() {       
+      // Vimeo API nonsense 
+//  For images only
+        $('.flexslider').flexslider({
+          controlNav: false
+        });
+
+
+      });
+  </script>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-georgia.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+
+<meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+		
+        <link rel="shortcut icon" href="../favicon.ico"> 
+       
+        <link rel="stylesheet" type="text/css" href="css/style_reg.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+		
+</head>
+
+<body>
+
+
+ <!-- Header -->
+    <div class="tm-header">
+      <div class="container">
+
+  
+
+        <div class="row">
+          <div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
+              <a href="index1.html" class="brand">
+              <img src="images/logo.png" width=300" height="55" alt="Logo"/></a>
+
+          </div>
+          <div class="col-lg-6 col-md-8 col-sm-9">
+            <div class="mobile-menu-icon">
+                  <i class="fa fa-bars"></i>
+                </div>
+            <nav class="tm-nav">
+            <ul>
+
+              <li><a href="index.html" >Home Page</a></li>
+              <li><a href="reg_1.html" class="active">Registration</a></li>
+              <li><a href="about.html" >About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+          </nav>    
+          </div>        
+        </div>
+      </div>      
+    </div>
+
+
+
+
+		
+
+			
+            <header>
+                
+				
+            </header>
+			
+			
+            <section>				
+                <div id="container_demo" >
+                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <a class="hiddenanchor" id="tologsup"></a>
+                    <a class="hiddenanchor" id="tologcom"></a>
+                    <a class="hiddenanchor" id="toregsup"></a>
+                    <a class="hiddenanchor" id="toregcom"></a>
+                    <a class="hiddenanchor" id="tologsupc"></a>
+
+
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form  action="mysuperscript.php" method="post" autocomplete="on">
+                                <h1>Log in</h1>
+                                <p>
+                                    <label for="emaillogin" class="youmail" data-icon="e" > Your E-mail</label>
+                                    <input id="emaillogin" name="emaill" required="required" type="email" placeholder="mysupermail@mail.com"/>
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                                </p>
+                                <p class="keeplogin"> 
+									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+									<label for="loginkeeping">Keep me logged in</label>
+								</p>
+                                <p class="login button"> 
+                                    <input type="submit"name="stud_log" value="Login" />
+								</p>
+                              <b class="change_link">
+                                   <b> Not a member yet ?</b>   <a href="#toregister" class="to_register">Join us</a></b><br>
+                                   <b></b> login as Academic Supervisor ?</b> <a href="#tologsup" class="to_register">Login here</a></b><br>
+                                   <b></b> login as Field Supervisor ?</b> <a href="#tologsupc" class="to_register">Login here</a></b><br>
+                                   <b> Login as Company ?</b>  </b> <a href="#tologcom" class="to_register">Login here</a></b> <br>
+							</p>
+                            </form>
+                        </div>
+
+                        <div id="register" class="animate form">
+                            <form  action="mysuperscript.php" method="post" autocomplete="on">
+                                <h1> Sign up </h1> 
+                                <p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">Your Name</label>
+                                    <input id="usernamesignup" name="namer" required="required" type="text" placeholder="mysuperusername690" />
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" > Your E-mail</label>
+                                    <input id="emailsignup" name="emailr" required="required" type="email" placeholder="mysupermail@mail.com"/>
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Your Password </label>
+                                    <input id="passwordsignup" name="passr" required="required" type="password" placeholder="Enter your password"/>
+                                </p>
+                                <p> 
+                                    <label for="specialization" class="youspe" data-icon="p">Your Specialization</label>
+                                    <input id="specialization" name="specr" required="required" type="text" placeholder="Your specialization"/>
+                                </p>
+                                <p>
+                                    <label for="Age" class="youage" data-icon="p">Your Age </label>
+                                    <input id="Age" name="ager" required="required" type="int" placeholder="Your age"/>
+                                </p>
+
+                                <p>
+                                    <label for="City" class="youCity" data-icon="p">your City </label>
+                                    <input id="City" name="cityr" required="required" type="text" placeholder="Your city"/>
+                                </p>
+
+                                <p class="signin button"> 
+									<input type="submit"name="stud_reg" value="Sign up"/>
+								</p>
+                                <p class="change_link">  
+									Already a member ?
+									<a href="#tologin" class="to_register"> Go and log in </a>
+								</p>
+                            </form>
+                        </div>
+
+
+                        <div id="loginsup" class="animate form">
+                            <form  action="mysuperscript.php" method="post" autocomplete="on">
+                                <h1> Log in As Academic Supervisor </h1>
+                                <p>
+                                    <label for="emaillogsup" class="youmail" data-icon="e" >Supervisor's Email</label>
+                                    <input id="emaillogsup" name="emaillogsup" required="required" type="email" placeholder="supervisor's email@mail.com"/>
+                                </p>
+
+                                <p>
+                                    <label for="passlogsup" class="youpasswd" data-icon="p"> password </label>
+                                    <input id="passlogsup" name="passlogsup" required="required" type="password" placeholder="Enter password"/>
+                                </p>
+                                <p class="signin button">
+                                    <input type="submit"name="sup_log" value="Log in"/>
+                                </p>
+                                <p>
+                                    <b class="change_link">
+                                        <b> Not a member yet ?</b>   <a href="#toregsup" class="to_register">Join us</a></b><br>
+
+
+                                         <b> </b> <a href="#tologin" class="to_register">To Home </a></b><br>
+
+                                </p>
+
+                                </form>
+                            </div>
+
+                        <div id="regsup" class="animate form">
+                            <form  action="mysuperscript.php" method="post" autocomplete="on">
+                                <h1> SignUp As Supervisor </h1>
+                                <p>
+                                    <label for="usernameregsup" class="uname" data-icon="u">Your username</label>
+                                    <input id="usernameregsup" name="usernameregsup" required="required" type="text" placeholder="supervisor's name" />
+                                </p>
+                                <p>
+                                    <label for="emailregsup" class="youmail" data-icon="e" >Supervisor's Email</label>
+                                    <input id="emailregsup" name="emailregsup" required="required" type="email" placeholder="supervisor's email@mail.com"/>
+                                </p>
+
+                                <p>
+                                    <label for="passregsup" class="youpasswd" data-icon="p"> password </label>
+                                    <input id="passregsup" name="passregsup" required="required" type="password" placeholder="Enter password"/>
+                                </p>
+                                <p class="signin button">
+                                    <input type="submit" name="sup_reg" value="Sign Up "/>
+                                </p>
+
+
+                                <p class="change_link">
+                                    Already a member ?
+                                    <a href="#tologsup" class="to_register"> Go and log in </a>
+                                </p>
+
+                            </form>
+                        </div>
+
+
+
+
+                        <div id="logincom" class="animate form">
+                            <form  action="mysuperscript.php" method="post" autocomplete="on">
+                                <h1> Log in As Company </h1>
+                                <p>
+                                    <label for="emaillogcom" class="youmail" data-icon="e" >Company's Email</label>
+                                    <input id="emaillogcom" name="emaillogcom" required="required" type="email" placeholder="company's email@mail.com"/>
+                                </p>
+
+                                <p>
+                                    <label for="passlogcom" class="youpasswd" data-icon="p"> password </label>
+                                    <input id="passlogcom" name="passlogcom" required="required" type="password" placeholder="Enter password"/>
+                                </p>
+                                <p class="signin button">
+                                    <input type="submit"name="com_log" value="Log in"/>
+                                </p>
+                                <p>
+                                    <b class="change_link">
+                                        <b> Not a member yet ?</b>   <a href="#toregcom" class="to_register">Join us</a></b><br>
+                                        <b> </b> <a href="#tologin" class="to_register">To Home </a></b><br>
+                                </p>
+
+                            </form>
+                        </div>
+
+
+
+                        <div id="regcom" class="animate form">
+                            <form  action="mysuperscript.php" method="post" autocomplete="on">
+                                <h1> SignUp As Company </h1>
+                                <p>
+                                    <label for="usernameregcom" class="uname" data-icon="u">Company's Name</label>
+                                    <input id="usernameregcom" name="usernameregcom" required="required" type="text" placeholder="company's name" />
+                                </p>
+                                <p>
+                                    <label for="emailregcom" class="youmail" data-icon="e" >Company's Email</label>
+                                    <input id="emailregcom" name="emailregcom" required="required" type="email" placeholder="company's email@mail.com"/>
+                                </p>
+
+                                <p>
+                                    <label for="passregcom" class="youpasswd" data-icon="p"> password </label>
+                                    <input id="passregcom" name="passregcom" required="required" type="password" placeholder="Enter password"/>
+                                </p>
+                                <p>
+                                    <label for="locationregcom" class="uname" data-icon="u">Company's location</label>
+                                    <input id="locationregcom" name="locationregcom" required="required" type="text" placeholder="location of company" />
+                                </p>
+                                <p class="signin button">
+                                    <input type="submit"name="com_reg" value="Sign Up "/>
+                                </p>
+
+
+                                <p class="change_link">
+                                    Already a member ?
+                                    <a href="#tologcom" class="to_register"> Go and log in </a>
+                                </p>
+
+                            </form>
+                        </div>
+
+
+
+                        <div id="loginsupc" class="animate form">
+                            <form  action="mysuperscript.php" method="post" autocomplete="on">
+                                <h1> Log in As Field Supervisor </h1>
+                                <p>
+                                    <label for="emaillogsup" class="youmail" data-icon="e" >Supervisor's Email</label>
+                                    <input id="emaillogsupc" name="emaillogsupc" required="required" type="email" placeholder="supervisor's email@mail.com"/>
+                                </p>
+
+                                <p>
+                                    <label for="passlogsup" class="youpasswd" data-icon="p"> password </label>
+                                    <input id="passlogsupc" name="passlogsupc" required="required" type="password" placeholder="Enter password"/>
+                                </p>
+                                <p class="signin button">
+                                    <input type="submit"name="sup_log" value="Log in"/>
+                                </p>
+                                <p>
+                                    <b class="change_link">
+
+
+
+                                    <b> </b> <a href="#tologin" class="to_register">To Home </a></b><br>
+
+                                </p>
+
+                            </form>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                </div>  
+            </section>
+        </div>
+		  
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+</body>
+</html>

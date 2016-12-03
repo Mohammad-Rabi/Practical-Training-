@@ -1,0 +1,454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Practical Training 
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">  
+<link href="css/flexslider.css" rel="stylesheet">
+<link href="css/templatemo-style.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>          <!-- jQuery -->
+    <script type="text/javascript" src="js/moment.js"></script>             <!-- moment.js -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>          <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script> <!-- bootstrap date time picker js, http://eonasdan.github.io/bootstrap-datetimepicker/ -->
+  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<!--
+  <script src="js/froogaloop.js"></script>
+  <script src="js/jquery.fitvid.js"></script>
+-->
+    <script type="text/javascript" src="js/templatemo-script.js"></script>          <!-- Templatemo Script -->
+  <script>
+    // HTML document is loaded. DOM is ready.
+    $(function() {
+
+      $('#hotelCarTabs a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+
+          $('.date').datetimepicker({
+              format: 'MM/DD/YYYY'
+            });
+            $('.date-time').datetimepicker();
+
+      // https://css-tricks.com/snippets/jquery/smooth-scrolling/
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+    });
+    
+    // Load Flexslider when everything is loaded.
+    $(window).load(function() {       
+      // Vimeo API nonsense 
+//  For images only
+        $('.flexslider').flexslider({
+          controlNav: false
+        });
+
+
+      });
+  </script>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-georgia.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="chosen.css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/json+oembed" href="https://www.jotform.com/oembed/?format=json&amp;url=http%3A%2F%2Fwww.jotform.com%2Fform%2F62685639308467" title="oEmbed Form"><link rel="alternate" type="text/xml+oembed" href="https://www.jotform.com/oembed/?format=xml&amp;url=http%3A%2F%2Fwww.jotform.com%2Fform%2F62685639308467" title="oEmbed Form">
+<meta property="og:title" content="CV Submission" >
+<meta property="og:url" content="http://www.jotform.me/form/62685639308467" >
+<meta property="og:description" content="Please click the link to complete this form.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="HandheldFriendly" content="true" />
+<title>CV Submission</title>
+<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.15002" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.15002" />
+<link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.15002" />
+<style type="text/css">
+    .form-label-left{
+        width:150px !important;
+    }
+    .form-line{
+        padding-top:12px;
+        padding-bottom:12px;
+    }
+    .form-label-right{
+        width:150px !important;
+    }
+    body, html{
+        margin:0;
+        padding:0;
+        background:false;
+    }
+
+    .form-all{
+        margin:0px auto;
+        padding-top:0px;
+        width:590px;
+        color:Black !important;
+        font-family:'Lucida Grande','Lucida Sans Unicode','Lucida Sans','Verdana','Tahoma','sans-serif';
+        font-size:14px;
+    }
+	
+	table {
+   <!-- border: 1px solid black;-->
+    width: 100%;
+	font-size:14px;
+
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(odd){background-color: #ffffff}
+
+th {
+    background-color: #333388;
+    color: white;
+}
+td {
+    color: black;
+}
+	
+
+</style>
+
+<!--<script src="https://cdn.jotfor.ms/js/vendor/imageinfo.js?v=3.3.15002" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.15002" type="text/javascript"></script>-->
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.15768" type="text/javascript"></script>
+<script type="text/javascript">
+   JotForm.init(function(){
+      setTimeout(function() {
+   }};
+</script>
+
+
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="tm-header">
+      <div class="container">
+
+  
+
+        <div class="row">
+          <div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
+              <a href="index1.html" class="brand">
+              <img src="images/logo.png" width=300" height="55" alt="Logo"/></a>
+
+          </div>
+          <div class="col-lg-6 col-md-8 col-sm-9">
+            <div class="mobile-menu-icon">
+                  <i class="fa fa-bars"></i>
+                </div>
+            <nav class="tm-nav">
+            <ul>
+
+              <li><a href="index.html" >Home</a></li>
+              <li><a href="reg_1.html">Reports</a></li>
+              <li><a href="about.html">Rating</a></li>
+            </ul>
+          </nav>    
+          </div>        
+        </div>
+      </div>      
+    </div>
+
+
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="menu_nav">
+      </div>
+      <div class="slider">
+ <form class="jotform-form" action="https://submit.jotform.me/submit/63013846137453/" method="post" name="form_63013846137453" id="63013846137453" accept-charset="utf-8">
+  <div class="form-all">
+    <ul class="form-section page-section">
+        <div class="form-header-group">
+            <h2 id="header_18" class="form-header">Final Report</h2>
+        </div>
+     
+      <li class="form-line form-line-column form-col-1" data-type="control_dropdown" id="id_19">
+        <label class="form-label form-label-top" id="label_19" for="input_19"> Choose Semester </label>
+        <div id="cid_19" class="form-input-wide jf-required">
+          <select class="form-dropdown" style="width:150px;" id="input_19" name="q19_chooseSemester19">
+            <option value="">  </option>
+            <option value="First Semester 2015"> First Semester 2015 </option>
+            <option value="Second Semester 2015"> Second Semester 2015 </option>
+            <option value="Summer 2015"> Summer 2015 </option>
+            <option value="First Semester 2016"> First Semester 2016 </option>
+            <option value="Second Semester 2016"> Second Semester 2016 </option>
+            <option value="Summer 2016"> Summer 2016 </option>
+          </select>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-2" data-type="control_button" id="id_14">
+          <div style="text-align:center" class="form-buttons-wrapper">
+            <button id="input_14" type="submit" class="form-submit-button">
+              continue
+            </button>
+          </div>
+      </li>
+      <li class="form-line form-line-column form-col-3" data-type="control_textbox" id="id_20">
+        <label class="form-label form-label-top" id="label_20" for="input_20"> Specialization code </label>
+        <div id="cid_20" class="form-input-wide jf-required">
+          <input type="text" class=" form-textbox" data-type="input-textbox" id="input_20" name="q20_specializationCode20" size="20" value="" />
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-4" data-type="control_button" id="id_23">
+        <div id="cid_23" class="form-input-wide">
+          <div style="text-align:center" class="form-buttons-wrapper">
+            <button id="input_23" type="submit" class="form-submit-button">
+              continue
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-5" data-type="control_textbox" id="id_21">
+        <label class="form-label form-label-top" id="label_21" for="input_21"> Student # </label>
+        <div id="cid_21" class="form-input-wide jf-required">
+          <input type="text" class=" form-textbox" data-type="input-textbox" id="input_21" name="q21_student" size="20" value="" />
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-6" data-type="control_button" id="id_22">
+        <div id="cid_22" class="form-input-wide">
+          <div style="text-align:left" class="form-buttons-wrapper">
+            <button id="input_22" type="submit" class="form-submit-button">
+              Show final_report
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="clear:both">
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+  <input type="hidden" id="simple_spc" name="simple_spc" value="63013846137453" />
+  <script type="text/javascript">
+  document.getElementById("").value = "63013846137453-63013846137453";
+  </script>
+</form>
+		  
+		  
+		  
+	
+	  <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+        <div class="article">
+          <h2></h2>
+		  
+		   <h2></h2>
+		  <br />
+	   <br />
+          <div class="clr"></div>
+		  
+		  
+<table width="350px";>
+  <tr>
+    <th width="40%">StudentName:</th>
+    <td>Haya</td>
+  </tr>
+    <tr>
+    <th>Student Number:</th>
+    <td>11211211</td>
+  </tr>
+  <tr>
+    <th>Training Place:</th>
+    <td>Infinite</td>
+  </tr>
+
+</table>
+				  
+				  
+<h1></h1>
+<br/>
+<br/>
+<table>
+  <tr>
+    <th>1.How was the follow-up field by supervisor to you?</th>
+  </tr>
+  <tr>
+    <td>The answer</td>
+  </tr>
+   <tr>
+    <th>2.What is the extent of benefit achieved from the practical training?</th>
+  </tr>
+  <tr>
+    <td>The answer</td>
+  </tr>
+  
+ <tr>
+    <th>3.Is the practical training has a clear program aims to develop your practical abilities? </th>
+  </tr>
+  <tr>
+    <td>The answer</td>
+  </tr>
+  
+    <tr>
+    <th>4.Would you recommend choosing a training venue Subsequent to your colleagues in the coming years? (clear answer)</th>
+  </tr>
+  <tr>
+    <td>The answer</td>
+  </tr>
+  
+      <tr>
+    <th>5.What are the difficulties that you encounter in the use of the site to process and send weekly reports?</th>
+  </tr>
+  <tr>
+    <td>The answer</td>
+  </tr>
+  
+      <tr>
+    <th>6.Do you think the field supervisor faced difficulties in using the site? (clear answer)</th>
+  </tr>
+  <tr>
+    <td>The answer</td>
+  </tr>
+  
+      <tr>
+    <th>7.How was the practical training center staff deal with you during the booking and registration of training places? )</th>
+  </tr>
+  <tr>
+    <td>The answer</td>
+  </tr>
+
+      <tr>
+    <th>7.How was the practical training center staff deal with you during the booking and registration of training places? )</th>
+  </tr>
+  <tr>
+    <td>8.Any observations ?</td>
+  </tr>
+  
+</table>
+
+
+          <br/>
+		  <br/>
+		  
+		  <button>Back</button>
+		  
+		  
+		  
+	
+
+          <div class="clr"></div>
+          <div class="img"></div>
+          <div class="post_content">
+            
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="article">
+          <h2></h2>
+          <div class="clr"></div>
+          <div class="img"></div>
+          <div class="post_content">
+          
+          </div>
+          <div class="clr"></div>
+		  
+        </div>
+
+      </div>
+      <div class="sidebar">
+        <div class="searchform">
+          <form id="formsearch" name="formsearch" method="post" action="#">
+          </form>
+        </div>
+        <div class="clr"></div>
+        <div class="gadget">
+          <h2 class="star"></h2>
+          <div class="clr"></div>
+          <ul class="sb_menu">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="gadget">
+          <h2 class="star"></h2>
+          <div class="clr"></div>
+          <ul class="ex_menu">
+            <li><br /></li>
+            <li><br /></li>
+            <li><br /></li>
+            <li><br /></li>
+            <li><br /></li>
+            <li><br /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="fbg">
+    <div class="fbg_resize">
+      <div class="col c1">
+      
+		<div class="col c2">
+      
+      </div>
+      <div class="col c3">
+        <p></p>
+        <br />
+        <br />
+        <br />
+     
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+    <footer class="tm-black-bg">
+    <div class="container">
+      <div class="row">
+        <p class="tm-copyright-text">Copyright &copy; 2016 Graduation Project
+                
+                | <a rel="nofollow" href="" target="_parent">Practical Training </a></p>
+      </div>
+    </div>    
+  </footer>
+  </div>
+</div>
+</body>
+</html>

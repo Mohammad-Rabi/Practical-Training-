@@ -1,0 +1,11 @@
+ <li class="form-line" data-type="control_button" id="id_14">
+          <form action ="test.php" method ="post">
+        <div id="cid_14" class="form-input-wide">
+          <div style="text-align:left" class="form-buttons-wrapper">
+            <button id="input_14" type="submit" class="form-submit-button" >
+              Finally Report
+            </button>
+          </div>
+        </div>
+        </form>
+      </li>
