@@ -1,8 +1,7 @@
 /* remove codrops styles and reset the whole thing */
 #container_demo{
 	 text-align: left;
-	  margin:0;
-
+	 margin: 0;
 	 padding: 0;
 	 margin: 0 auto;
 	 font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
@@ -36,18 +35,11 @@ a.hiddenanchor{
 /** The wrapper that will contain our two forms **/
 #wrapper{
 	width: 60%;
-
-	min-height: 680px;
-	align :"center";
-    margin-left :750px;
-	margin-right :100px;
-	margin-top :70px;
-	width: 600px;
-	height: 800px;
-	position: relative;
-	padding-top: 50px;
-	padding-bottom: 50px;
-
+	right: 0px;
+	min-height: 560px;	
+	margin: 0px auto;	
+	width: 500px;
+	position: relative;	
 }
 /**** Styling the form elements **/
 
@@ -302,7 +294,6 @@ p.change_link{
 #register, 
 #login,
 #loginsup,
-#loginsupc,
 #regsup,
 #logincom,
 #regcom,
@@ -334,12 +325,6 @@ p.change_link{
 	z-index: 21;
 	opacity: 0;
 }
-#loginsupc{
-	z-index: 21;
-	opacity: 0;
-}
-
-
 #regsup{
 	z-index: 21;
 	opacity: 0;
@@ -359,7 +344,6 @@ p.change_link{
 #toregister:target ~ #wrapper #register,
 #tologin:target ~ #wrapper #login,
 #tologsup:target ~ #wrapper #loginsup,
-#tologsupc:target ~ #wrapper #loginsupc,
 #toregsup:target ~ #wrapper #regsup,
 #tologcom:target ~ #wrapper #logincom,
 #toregcom:target ~ #wrapper #regcom
