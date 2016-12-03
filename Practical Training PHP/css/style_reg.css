@@ -39,7 +39,7 @@ a.hiddenanchor{
 	right: 0px;
 	min-height: 560px;	
 	margin: 0px auto;	
-	width: 500px;
+	width: 600px;
 	position: relative;	
 }
 /**** Styling the form elements **/
@@ -276,6 +276,7 @@ p.change_link{
 #register, 
 #login,
 #loginsup,
+#loginsupc,
 #regsup,
 #logincom,
 #regcom,
@@ -298,6 +299,15 @@ p.change_link{
 	z-index: 21;
 	opacity: 0;
 }
+#loginsupc{
+	z-index: 21;
+	opacity: 0;
+}
+
+
+
+
+
 #regsup{
 	z-index: 21;
 	opacity: 0;
@@ -317,6 +327,7 @@ p.change_link{
 #toregister:target ~ #wrapper #register,
 #tologin:target ~ #wrapper #login,
 #tologsup:target ~ #wrapper #loginsup,
+#tologsupc:target ~ #wrapper #loginsupc,
 #toregsup:target ~ #wrapper #regsup,
 #tologcom:target ~ #wrapper #logincom,
 #toregcom:target ~ #wrapper #regcom

@@ -12,11 +12,24 @@ if(isset($_POST['save_infoComp'])) {
     echo $p1;
     echo $p2;
 
-    $location =$_POST['locOfComp'];
+
+    $name = $_POST['name'];
+    $location = $_POST['locOfComp'];
     $genInfo = $_POST['genInfoOfComp'];
     $image = $_POST['imgOfComp'];
+    $fax = $_POST['fax'];
+    $phoneNum = $_POST['phoneNum'];
+    $email = $_POST['emailc'];
 
-    $insert_compInfo = "insert into comp_info(location,image,description,spec1,spec2,spec3)VALUE('$location','$image','$genInfo','$p0','$p1','$p2')";
+
+
+
+
+
+
+
+
+    $insert_compInfo = "insert into comp_info(name_comi,loc_comi,img_comi,des_comi,spec1_comi,spec2_comi,spec3_comi,email_comi,fax_comi,phoneN_comi)VALUE('$name','$location','$image','$genInfo','$p0','$p1','$p2','$fax','$phoneNum','$email')";
     $res = $con->query($insert_compInfo );
     if ($res === TRUE) {
 

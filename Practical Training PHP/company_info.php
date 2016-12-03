@@ -249,17 +249,17 @@ if(!empty($query)){
                         <li class="form-line form-line-column form-col-1" data-type="control_textbox" id="id_19" >
                             <label class="form-label form-label-top" id="label_19" for="input_19"> Name </label>
                             <div id="cid_19" class="form-input-wide jf-required">
-                                <input type="text" class=" form-textbox" data-type="input-textbox" id="input_19" name="q19_id19" size="20" value="<?php echo $namec ?> "/>
+                                <input type="text" class=" form-textbox" data-type="input-textbox" id="input_19" name="name" size="20" value="<?php echo $namec ?> "/>
                             </div>
                         </li>
                         <li class="form-line" data-type="control_textarea" id="id_20">
                             <label class="form-label form-label-top form-label-auto" id="label_20" for="input_20" > About the company </label>
                             <div id="cid_20" class="form-input-wide jf-required">
-                                <textarea id="input_20" class="form-textarea" name="q20_generalInformation" cols="55" rows="7"></textarea>
+                                <textarea id="input_20" class="form-textarea" name="genInfoOfComp" cols="55" rows="7"></textarea>
                             </div>
                         </li>
                         <li class="form-line" data-type="control_textbox" id="id_21">
-                            <label class="form-label form-label-top form-label-auto" id="label_21" for="input_21" > Specialization that support </label>
+                            <label class="form-label form-label-top form-label-auto" id="label_21" name="selSpec[]" for="input_21" > Specialization that support </label>
                             <div id="cid_21" class="form-input-wide jf-required">
                                 <div>
                                     <div>
@@ -306,21 +306,21 @@ if(!empty($query)){
                         <li class="form-line" data-type="control_email" id="id_3">
                             <label class="form-label form-label-top" id="label_3" for="input_3"> E-mail </label>
                             <div id="cid_3" class="form-input-wide jf-required">
-                                <input type="email" class=" form-textbox validate[Email]" id="input_3" name="q3_email3" size="30" value="" />
+                                <input type="email" class=" form-textbox validate[Email]" id="input_3" name="emailc" size="30" value="" />
                             </div>
                         </li>
                         <li class="form-line" data-type="control_phone" id="id_5">
                             <label class="form-label form-label-top" id="label_5" for="input_5"> Contact Number </label>
                             <div id="cid_5" class="form-input-wide jf-required">
           <span class="form-sub-label-container" style="vertical-align: top;">
-            <input class="form-textbox" type="tel" name="q5_contactNumber[fax]" id="input_5_fax" size="20">
+            <input class="form-textbox" type="tel" name="fax" id="input_5_fax" size="20">
             <span class="phone-separate">
               &nbsp;-
             </span>
             <label class="form-sub-label" for="input_5_area" id="sublabel_area" style="min-height: 13px;">Fax </label>
           </span>
           <span class="form-sub-label-container" style="vertical-align: top;">
-            <input class="form-textbox" type="tel" name="q5_contactNumber[phone]" id="input_5_phone" size="20">
+            <input class="form-textbox" type="tel" name="phoneNum" id="input_5_phone" size="20">
             <label class="form-sub-label" for="input_5_phone" id="sublabel_phone" style="min-height: 13px;"> Phone Number </label>
           </span>
                             </div>
@@ -331,7 +331,7 @@ if(!empty($query)){
 
                             <br/>
                             <div id="cid_7" class="form-input-wide jf-required">
-                                <input class="form-upload" type="file" id="input_7" name="q7_uploadYour7" data-imagevalidate="yes" file-accept="pdf, doc, docx, xls, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" file-maxsize="10240" file-minsize="0" file-limit="0" />
+                                <input class="form-upload" type="file" id="input_7" name="imgOfComp" data-imagevalidate="yes" file-accept="pdf, doc, docx, xls, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" file-maxsize="10240" file-minsize="0" file-limit="0" />
                             </div>
                         </li>
 
@@ -340,7 +340,7 @@ if(!empty($query)){
                         <li class="form-line" data-type="control_button" id="id_14">
                             <div id="cid_14" class="form-input-wide">
                                 <div style="text-align:center" class="form-buttons-wrapper">
-                                    <button id="input_14" type="submit" class="form-submit-button">
+                                    <button id="input_14" type="submit"name="save_infoComp" class="form-submit-button">
                                         Save
                                     </button>
                                 </div>
