@@ -14,6 +14,7 @@ $query = mysqli_query($con1,"SELECT * FROM company_reg WHERE email_comr = '".$_S
 if(!empty($query)){
     while ($row = mysqli_fetch_array($query)) {
         $namec= $row["name_comr"];
+        $locationc =$row["location_comr"];
 
     }
 }
@@ -230,7 +231,7 @@ if(!empty($query)){
             <div class="article">
             </div>
             <div class="clr"></div>
-            <form class="jotform-form" action="https://submit.jotform.me/submit/63164604057453/" method="post" name="form_63164604057453" id="63164604057453" accept-charset="utf-8">
+            <form class="jotform-form" action="store_infoComp.php" method="post" name="form_63164604057453" id="63164604057453" accept-charset="utf-8">
                 <input type="hidden" name="formID" value="63164604057453" />
                 <div class="form-all">
                     <ul class="form-section page-section">
@@ -252,6 +253,19 @@ if(!empty($query)){
                                 <input type="text" class=" form-textbox" data-type="input-textbox" id="input_19" name="name" size="20" value="<?php echo $namec ?> "/>
                             </div>
                         </li>
+
+
+                        <li class="form-line form-line-column form-col-1" data-type="control_textbox" id="id_20" >
+                            <label class="form-label form-label-top" id="label_20" for="input_20"> Location </label>
+                            <div id="cid_20" class="form-input-wide jf-required">
+                                <input type="text" class=" form-textbox" data-type="input-textbox" id="input_19" name="locOfCom" size="20" value="<?php echo $locationc ?> "/>
+                            </div>
+                        </li>
+
+
+
+
+
                         <li class="form-line" data-type="control_textarea" id="id_20">
                             <label class="form-label form-label-top form-label-auto" id="label_20" for="input_20" > About the company </label>
                             <div id="cid_20" class="form-input-wide jf-required">
@@ -259,11 +273,11 @@ if(!empty($query)){
                             </div>
                         </li>
                         <li class="form-line" data-type="control_textbox" id="id_21">
-                            <label class="form-label form-label-top form-label-auto" id="label_21" name="selSpec[]" for="input_21" > Specialization that support </label>
+                            <label class="form-label form-label-top form-label-auto" id="label_21"  for="input_21" > Specialization that support </label>
                             <div id="cid_21" class="form-input-wide jf-required">
                                 <div>
                                     <div>
-                                        <select data-placeholder="Choose a Company..." class="chosen-select" multiple style="width:410px;" tabindex="4" >
+                                        <select data-placeholder="Choose a Company..." class="chosen-select" name="selSpec[]" multiple style="width:410px;" tabindex="4" >
 
                                             <optgroup label="Engineering">
                                                 <option value=""></option>

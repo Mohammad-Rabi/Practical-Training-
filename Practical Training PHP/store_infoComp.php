@@ -14,7 +14,7 @@ if(isset($_POST['save_infoComp'])) {
 
 
     $name = $_POST['name'];
-    $location = $_POST['locOfComp'];
+    $location = $_POST['locOfCom'];
     $genInfo = $_POST['genInfoOfComp'];
     $image = $_POST['imgOfComp'];
     $fax = $_POST['fax'];
@@ -33,7 +33,9 @@ if(isset($_POST['save_infoComp'])) {
     $res = $con->query($insert_compInfo );
     if ($res === TRUE) {
 
+
         echo "hyaaa";
+        header('Location: company_home.html');
 
     }
     else{
