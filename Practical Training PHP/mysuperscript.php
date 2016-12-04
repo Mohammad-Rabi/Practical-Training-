@@ -12,6 +12,7 @@ if(isset($_POST['stud_reg'])){
     $passst_r = $_POST['passr'];
     $specst_r = $_POST['specr'];
     $agest_r = $_POST['ager'];
+    $regNo_r =$_POST['regNor'];
     $cityst_r = $_POST['cityr'];
 
     $check_email_query = "select * from student_reg WHERE email_studr='$emailst_r'";
@@ -20,10 +21,12 @@ if(isset($_POST['stud_reg'])){
 
 
         echo "<script>alert('Email $emailst_r is already exist in our database, Please try another one!')</script>";
+
         exit();
+        header("Location: http://localhost/reg_1.html#toregister");
     }
 //insert the user into the database.
-    $insert_studr = "insert into student_reg (name_studr,email_studr,pass_studr,spec_studr,age_studr,city_studr) VALUE ('$namest_r','$emailst_r','$passst_r','$specst_r','$agest_r','$cityst_r')";
+    $insert_studr = "insert into student_reg (name_studr,email_studr,pass_studr,spec_studr,age_studr,regNo_stur,city_studr) VALUE ('$namest_r','$emailst_r','$passst_r','$specst_r','$agest_r','$regNo_r','$cityst_r')";
     $res = $con->query($insert_studr);
 
     if ($res === TRUE) {
