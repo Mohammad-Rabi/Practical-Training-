@@ -4,67 +4,6 @@
 <title>Practical Training 
 </title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
-<link href="css/font-awesome.min.css" rel="stylesheet">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">  
-<link href="css/flexslider.css" rel="stylesheet">
-<link href="css/templatemo-style.css" rel="stylesheet">
-
-<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>          <!-- jQuery -->
-    <script type="text/javascript" src="js/moment.js"></script>             <!-- moment.js -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>          <!-- bootstrap js -->
-  <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script> <!-- bootstrap date time picker js, http://eonasdan.github.io/bootstrap-datetimepicker/ -->
-  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-<!--
-  <script src="js/froogaloop.js"></script>
-  <script src="js/jquery.fitvid.js"></script>
--->
-    <script type="text/javascript" src="js/templatemo-script.js"></script>          <!-- Templatemo Script -->
-  <script>
-    // HTML document is loaded. DOM is ready.
-    $(function() {
-
-      $('#hotelCarTabs a').click(function (e) {
-        e.preventDefault()
-        $(this).tab('show')
-      })
-
-          $('.date').datetimepicker({
-              format: 'MM/DD/YYYY'
-            });
-            $('.date-time').datetimepicker();
-
-      // https://css-tricks.com/snippets/jquery/smooth-scrolling/
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-          }
-        });
-    });
-    
-    // Load Flexslider when everything is loaded.
-    $(window).load(function() {       
-      // Vimeo API nonsense 
-//  For images only
-        $('.flexslider').flexslider({
-          controlNav: false
-        });
-
-
-      });
-  </script>
-
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
 <script type="text/javascript" src="js/cufon-yui.js"></script>
@@ -134,6 +73,25 @@ th {
     color: white;
 }
 
+a:link {
+    color: black;
+	    text-decoration: none;
+
+}
+
+/* visited link */
+a:visited {
+    color: black;
+	    text-decoration: none;
+
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+	    text-decoration: none;
+
+}
 
 </style>
 
@@ -146,46 +104,30 @@ th {
 
 </head>
 <body>
-
- <!-- Header -->
-    <div class="tm-header">
-      <div class="container">
-
-  
-
-        <div class="row">
-          <div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
-              <a href="index1.html" class="brand">
-              <img src="images/logo.png" width=300" height="55" alt="Logo"/></a>
-
-          </div>
-          <div class="col-lg-6 col-md-8 col-sm-9">
-            <div class="mobile-menu-icon">
-                  <i class="fa fa-bars"></i>
-                </div>
-            <nav class="tm-nav">
-            <ul>
-
-              <li><a href="supervisor_home.html" >Home</a></li>
-              <li><a href="sup_reports.html" class="active">Reports</a></li>
-              <li><a href="show_student.html">Rating</a></li>
-
-            </ul>
-          </nav>    
-          </div>        
-        </div>
-      </div>      
-    </div>
-
 <div class="main">
   <div class="header">
     <div class="header_resize">
       <div class="menu_nav">
-
+        <ul>
+          <li><a href="supervisor_home.html"><span>Home</span></a></li>
+          <li class="active"><a href="sup_reports.html"><span>Reports</span></a></li>
+          <li><a href=".html"><span>Rating</span></a></li>
+        </ul>
       </div>
 	  
+      <div class="logo">
+        <h1>Practical<span>Training</span></h1>
+      </div>
    
       <div class="slider">
+	  
+	  <br/>
+	  <br/>
+	  <br/>
+	  <br/>
+	  <br/>
+	  <br/>
+	  
  <form class="jotform-form" action="" method="post" name="form_63086017167456" id="63086017167456" accept-charset="utf-8">
   <input type="hidden" name="formID" value="63086017167456" />
   <div class="form-all">
@@ -259,18 +201,9 @@ th {
     <th>Total hours training</th>
     <th>Total hours absense</th>
   </tr>
+
   <tr>
-    <td>Anhar Dwaikat</td>
-    <td>5</td>
-    <td>3</td>
-    <td>180</td>
-    <td>0</td>
-    <td>180</td>
-    <td>180</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>Haya Taqatqa</td>
+    <td><a href="sup_sh_wreport.html">Haya Taqatqa</a></td>
     <td>10</td>
     <td>5</td>
     <td>290</td>
@@ -323,12 +256,7 @@ th {
 
   </tr>
   <tr>
-    <td>Anhar Dwaikat</td>
-	<td></td>
-
-  </tr>
-  <tr>
-    <td>Haya Taqatqa</td>
+    <td><a href="show_finalreport.html">Haya Taqatqa</a></td>
 	<td></td>
 
   </tr>
@@ -419,15 +347,12 @@ th {
       <div class="clr"></div>
     </div>
   </div>
-    <footer class="tm-black-bg">
-    <div class="container">
-      <div class="row">
-        <p class="tm-copyright-text">Copyright &copy; 2016 Graduation Project
-                
-                | <a rel="nofollow" href="" target="_parent">Practical Training </a></p>
-      </div>
-    </div>    
-  </footer>
+  <div class="footer">
+    <div class="footer_resize">
+      <p class="lf"></p>
+      <p class="rf"></a></p>
+      <div style="clear:both;"></div>
+    </div>
   </div>
 </div>
 </body>
